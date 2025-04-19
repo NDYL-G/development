@@ -1,0 +1,58 @@
+{
+  "title": "Storing, Sharing & Automation",
+  "lastUpdated": "2025-04-19",
+  "overview": "This section focuses on storing data securely, sharing it effectively with others, and automating repetitive tasks to save time. These practices improve efficiency and consistency and are highly valued in data roles. They also contribute to the Approach to Work and Technical Skills elements of Assessment Method 1.",
+  "levels": [
+    {
+      "level": "Fundamental",
+      "skills": [
+        "Save files in appropriate formats (CSV, XLSX, PDF)",
+        "Organise folders and file naming conventions",
+        "Share spreadsheets via cloud platforms like OneDrive or Google Drive"
+      ],
+      "task": "Save a completed report as XLSX and PDF. Upload to a shared folder and ensure naming follows the company standard.",
+      "downloads": [
+        {
+          "label": "Download example summary file",
+          "url": "../docs/presentation-summary.xlsx"
+        }
+      ]
+    },
+    {
+      "level": "Intermediate",
+      "skills": [
+        "Use named ranges and structured tables for reusability",
+        "Apply data validation and formulas that auto-update",
+        "Link data across sheets and files"
+      ],
+      "task": "Create a named table that links to a summary sheet. Use formulas that auto-update when new rows are added.",
+      "downloads": [
+        {
+          "label": "Download named table workbook",
+          "url": "../docs/named-table-example.xlsx"
+        }
+      ]
+    },
+    {
+      "level": "Advanced",
+      "skills": [
+        "Create and run macros for repetitive tasks",
+        "Use Power Query to automate data transformation",
+        "Design a reusable dashboard with refreshable data"
+      ],
+      "task": "Record a macro that formats a report and creates a chart. Import data using Power Query and build a refreshable dashboard layout.",
+      "downloads": [
+        {
+          "label": "Download macro-enabled workbook",
+          "url": "../docs/macro-dashboard.xlsm"
+        }
+      ]
+    }
+  ],
+  "dataSource": {
+    "name": "Training workbook samples",
+    "url": "#",
+    "lastAccessed": "2025-04-19",
+    "note": "These workbooks are designed for automation and sharing practice. They are fictional but represent common data formats in the workplace."
+  }
+}
