@@ -1,0 +1,7 @@
+Customer ID,First Name,Last Name,Purchase Date,Amount (£)
+1001.0,Alice,Smith,01/03/2024,£200
+1002.0, Bob,Jones,02-03-2024,£150
+1002.0,Bob,Jones,02-03-2024,£150
+,Charlie,Brown,,£180
+1005.0,David,Taylor,05/03/2024,£
+1006.0,Eve,,06/03/2024,£220
