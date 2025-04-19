@@ -1,0 +1,58 @@
+{
+  "title": "Combining Datasets",
+  "lastUpdated": "2025-04-19",
+  "overview": "This section focuses on combining data from multiple sources or sheets. Merging datasets is a key skill in the data workflow and allows analysts to compare, enrich, or unify data. You'll learn basic techniques such as copy and paste when data aligns, and more advanced functions like VLOOKUP, XLOOKUP, and using Power Query to perform structured joins.",
+  "levels": [
+    {
+      "level": "Fundamental",
+      "skills": [
+        "Understand when and how to combine tables",
+        "Use copy and paste to merge datasets with matching columns",
+        "Align columns and remove duplicates"
+      ],
+      "task": "Copy two tables with identical columns into one sheet and remove duplicate entries.",
+      "downloads": [
+        {
+          "label": "Download matching sales sheets",
+          "url": "../docs/fundamental-combine.xlsx"
+        }
+      ]
+    },
+    {
+      "level": "Intermediate",
+      "skills": [
+        "Use VLOOKUP or HLOOKUP to fetch data from another sheet",
+        "Understand lookup table structure and assumptions",
+        "Use XLOOKUP to handle missing data"
+      ],
+      "task": "Use XLOOKUP to match employee names to their department from another table.",
+      "downloads": [
+        {
+          "label": "Download employee dataset",
+          "url": "../docs/intermediate-lookup.xlsx"
+        }
+      ]
+    },
+    {
+      "level": "Advanced",
+      "skills": [
+        "Use Power Query to merge datasets",
+        "Perform left and inner joins with transformation steps",
+        "Create reusable Power Query steps for future updates"
+      ],
+      "task": "Use Power Query to merge two tables (sales and regions) and output a refreshed summary table.",
+      "downloads": [
+        {
+          "label": "Download merge-ready workbook",
+          "url": "../docs/advanced-powerquery-combine.xlsx"
+        }
+      ]
+    }
+  ],
+  "dataSource": {
+    "name": "Fictional HR & Sales Data",
+    "url": "#",
+    "lastAccessed": "2025-04-19",
+    "note": "These example datasets simulate common business structures for merging practice. All data is fictional and anonymised."
+  }
+}
