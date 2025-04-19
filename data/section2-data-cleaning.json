@@ -1,0 +1,60 @@
+{
+  "title": "Data Cleaning & Validation",
+  "lastUpdated": "2025-04-19",
+  "overview": "This section helps you clean and validate data for analysis. Cleaning makes sure the data is reliable and ready to use, while validation ensures it meets certain rules or standards. This is a key skill in the data journey and Assessment Method 1 of the ST0795 EPA.",
+  "levels": [
+    {
+      "level": "Fundamental",
+      "skills": [
+        "Identify and remove duplicate entries",
+        "Spot and fill in blank cells where possible",
+        "Standardise formats (e.g., dates, currency)",
+        "Use sorting and filtering to find inconsistencies"
+      ],
+      "task": "Open the messy sales data and remove duplicate Customer IDs, fill in blanks where appropriate, and check date formats.",
+      "downloads": [
+        {
+          "label": "Download messy sales data (CSV)",
+          "url": "../docs/messy-sales-data.csv"
+        }
+      ]
+    },
+    {
+      "level": "Intermediate",
+      "skills": [
+        "Use formulas like IF, ISBLANK, TRIM, CLEAN",
+        "Use conditional formatting to highlight issues",
+        "Apply data validation to restrict inputs",
+        "Standardise text casing and spacing"
+      ],
+      "task": "Use formulas and conditional formatting to highlight rows with missing names or invalid dates. Apply validation to the 'Amount' column.",
+      "downloads": [
+        {
+          "label": "Download messy sales data (CSV)",
+          "url": "../docs/messy-sales-data.csv"
+        }
+      ]
+    },
+    {
+      "level": "Advanced",
+      "skills": [
+        "Use Power Query to remove errors and reformat columns",
+        "Create a reusable query that auto-cleans imported data",
+        "Handle nulls, incorrect data types, and currency symbols"
+      ],
+      "task": "Import the same file into Power Query. Clean up the data, remove symbols, promote headers, and change column types.",
+      "downloads": [
+        {
+          "label": "Download messy sales data (CSV)",
+          "url": "../docs/messy-sales-data.csv"
+        }
+      ]
+    }
+  ],
+  "dataSource": {
+    "name": "Synthetic training dataset",
+    "url": "#",
+    "lastAccessed": "2025-04-19",
+    "note": "This is a fictional dataset created for training purposes. It contains intentional issues for learners to resolve."
+  }
+}
