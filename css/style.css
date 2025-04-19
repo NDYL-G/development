@@ -1,21 +1,79 @@
-/* the corporate colours are 
-#FD9803 Vivid orange
-#112656 Very dark blue
-*/
 
-body {
+/* Updated for wider screens and improved layout */
+
+html, body {
+  height: 100%;
   margin: 0;
   font-family: system-ui, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
   background-color: #fdfdfd;
   color: #112656;
 }
 
 .container {
+  flex: 1;
   max-width: 1200px;
   margin: 0 auto;
   padding: 2rem;
 }
 
+header {
+  background-color: #112656;
+  color: white;
+  padding: 1rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.nav-logo {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+footer {
+  background-color: #f1f1f1;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #333;
+  margin-top: 4rem;
+}
+
+/* the corporate colours are...
+#FD9803 Vivid orange
+#112656 Very dark blue
+*/
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f4f4f4;
+  color: #112656;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  text-align: center;
+  padding: 2rem;
+  max-width: 800px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
 
 header .logo {
   width: 80px;
