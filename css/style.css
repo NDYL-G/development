@@ -13,6 +13,8 @@ body {
   padding-top: 70px; /* or however tall your navbar is */
   background-color: #fdfdfd;
   color: #112656;
+  padding-bottom: 80px; /* if using fixed footer */
+  box-sizing: border-box;
 }
 
 .container {
