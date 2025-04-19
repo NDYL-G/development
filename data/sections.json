@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "Data Gathering"
+  },
+  {
+    "id": 2,
+    "title": "Combining Datasets"
+  },
+  {
+    "id": 3,
+    "title": "Data Cleaning & Validation"
+  },
+  {
+    "id": 4,
+    "title": "Data Analysis"
+  },
+  {
+    "id": 5,
+    "title": "Data Presentation"
+  },
+  {
+    "id": 6,
+    "title": "Storing, Sharing & Automation"
+  }
+]
