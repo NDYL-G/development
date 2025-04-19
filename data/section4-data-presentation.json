@@ -1,0 +1,61 @@
+{
+  "title": "Data Presentation",
+  "lastUpdated": "2025-04-19",
+  "overview": "This section focuses on presenting your findings clearly and professionally. Using charts, layout tools, and dashboard techniques, you can turn your analysis into insights that are easy to understand. These skills are essential for communicating effectively in your role and meeting the expectations of Assessment Method 1.",
+  "levels": [
+    {
+      "level": "Fundamental",
+      "skills": [
+        "Add titles, headings, and number formatting",
+        "Insert basic charts (bar, column, pie)",
+        "Use table formatting for clean layout",
+        "Label axes and add chart legends"
+      ],
+      "task": "Create a column chart from the cleaned sales data showing total amount per region. Add a chart title and data labels.",
+      "downloads": [
+        {
+          "label": "Download cleaned sales data",
+          "url": "../docs/cleaned-sales-data.csv"
+        }
+      ]
+    },
+    {
+      "level": "Intermediate",
+      "skills": [
+        "Link charts to source tables",
+        "Use slicers and filters to make charts interactive",
+        "Apply conditional formatting to highlight key figures",
+        "Add annotations to highlight key trends"
+      ],
+      "task": "Create a pivot chart summarising amounts by region. Add a slicer for region and use conditional formatting to highlight values above \u00a3200.",
+      "downloads": [
+        {
+          "label": "Download cleaned sales data",
+          "url": "../docs/cleaned-sales-data.csv"
+        }
+      ]
+    },
+    {
+      "level": "Advanced",
+      "skills": [
+        "Build a dashboard layout using multiple charts",
+        "Use named ranges or dynamic tables",
+        "Create dropdowns to control charts",
+        "Customise visuals for different audiences"
+      ],
+      "task": "Create a dashboard with two charts: one filtered by region and another by amount range. Use dropdown menus and chart titles tailored for a management audience.",
+      "downloads": [
+        {
+          "label": "Download cleaned sales data",
+          "url": "../docs/cleaned-sales-data.csv"
+        }
+      ]
+    }
+  ],
+  "dataSource": {
+    "name": "Synthetic training dataset",
+    "url": "#",
+    "lastAccessed": "2025-04-19",
+    "note": "This cleaned dataset is reused from Section 3. It supports presentation practice tasks and includes no intentional data issues."
+  }
+}
