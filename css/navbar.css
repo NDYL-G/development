@@ -1,6 +1,27 @@
 
 /* NAVBAR STYLES */
 
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+body {
+  padding-top: 70px;   /* Space for header */
+  padding-bottom: 80px; /* Space for footer */
+}
+
 .navbar {
   background-color: #112656;
   padding: 1rem;
