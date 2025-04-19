@@ -30,25 +30,24 @@ body {
 
 .navbar {
   background-color: #112656;
-  padding: 1rem;
-  color: white;
+  padding: 0.5rem 1rem;
   width: 100%;
 }
 
 .nav-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start; /* changed from space-between */
   align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-  flex-wrap: wrap;
+  gap: 1rem;
+  max-width: 100%;
 }
 
 .nav-logo {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: bold;
   color: white;
   text-decoration: none;
+  margin-right: 1rem;
 }
 
 .nav-links {
