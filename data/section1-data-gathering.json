@@ -1,0 +1,49 @@
+{
+  "title": "Getting Started with Data: Gathering and Importing",
+  "lastUpdated": "2025-04-18",
+  "overview": "This section walks you through the first step of the data journey: gathering data. It supports the skills required in Assessment Method 1 of the ST0795 EPA.",
+  "levels": [
+    {
+      "level": "Fundamental",
+      "skills": [
+        "Copy & Paste from Word, web, or spreadsheet",
+        "Open CSV and XLSX files",
+        "Save and name files properly"
+      ],
+      "task": "Copy a table from a Word document and save it as imported_table.xlsx.",
+      "downloads": [
+        { "label": "Download Word table", "url": "../data/sample-word-table.docx" }
+      ]
+    },
+    {
+      "level": "Intermediate",
+      "skills": [
+        "Use Excel's Get Data from File and Web",
+        "Use Google Sheets IMPORTDATA or IMPORTHTML",
+        "Handle missing headers or delimiters"
+      ],
+      "task": "Import this CSV file and clean the headings.",
+      "downloads": [
+        { "label": "Download ONS Employment CSV", "url": "../data/ons-employment.csv" }
+      ]
+    },
+    {
+      "level": "Advanced",
+      "skills": [
+        "Use Power Query to load and clean data",
+        "Rename columns and remove blank rows",
+        "Enable auto-refresh"
+      ],
+      "task": "Connect Power Query to the CSV and clean the data.",
+      "downloads": [
+        { "label": "Power Query Instructions", "url": "../data/ons-employment-steps.pq" }
+      ]
+    }
+  ],
+  "dataSource": {
+    "name": "Office for National Statistics",
+    "url": "https://www.ons.gov.uk/",
+    "lastAccessed": "2025-04-18",
+    "note": "Data may change. Always check for updates. This version has been lightly modified for learning."
+  }
+}
