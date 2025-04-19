@@ -1,49 +1,57 @@
-{
-  "title": "Getting Started with Data: Gathering and Importing",
-  "lastUpdated": "2025-04-18",
-  "overview": "This section walks you through the first step of the data journey: gathering data. It supports the skills required in Assessment Method 1 of the ST0795 EPA.",
-  "levels": [
-    {
-      "level": "Fundamental",
-      "skills": [
-        "Copy & Paste from Word, web, or spreadsheet",
-        "Open CSV and XLSX files",
-        "Save and name files properly"
-      ],
-      "task": "Copy a table from a Word document and save it as imported_table.xlsx.",
-      "downloads": [
-        { "label": "Download Word table", "url": "../data/sample-word-table.docx" }
-      ]
-    },
-    {
-      "level": "Intermediate",
-      "skills": [
-        "Use Excel's Get Data from File and Web",
-        "Use Google Sheets IMPORTDATA or IMPORTHTML",
-        "Handle missing headers or delimiters"
-      ],
-      "task": "Import this CSV file and clean the headings.",
-      "downloads": [
-        { "label": "Download ONS Employment CSV", "url": "../data/ons-employment.csv" }
-      ]
-    },
-    {
-      "level": "Advanced",
-      "skills": [
-        "Use Power Query to load and clean data",
-        "Rename columns and remove blank rows",
-        "Enable auto-refresh"
-      ],
-      "task": "Connect Power Query to the CSV and clean the data.",
-      "downloads": [
-        { "label": "Power Query Instructions", "url": "../data/ons-employment-steps.pq" }
-      ]
-    }
-  ],
-  "dataSource": {
-    "name": "Office for National Statistics",
-    "url": "https://www.ons.gov.uk/",
-    "lastAccessed": "2025-04-18",
-    "note": "Data may change. Always check for updates. This version has been lightly modified for learning."
-  }
-}
+// js/data-gathering.js
+
+fetch('../data/section1-data-gathering.json')
+  .then(response => response.json())
+  .then(data => {
+    // Set title and overview
+    document.getElementById('title').textContent = data.title;
+    document.getElementById('overview').textContent = data.overview;
+
+    // Section content
+    const contentContainer = document.getElementById('levels');
+
+    data.levels.forEach(level => {
+      const section = document.createElement('div');
+      section.classList.add('card');
+
+      const heading = document.createElement('h2');
+      heading.textContent = `${level.level} Skills`;
+      section.appendChild(heading);
+
+      const ul = document.createElement('ul');
+      level.skills.forEach(skill => {
+        const li = document.createElement('li');
+        li.textContent = skill;
+        ul.appendChild(li);
+      });
+      section.appendChild(ul);
+
+      const task = document.createElement('p');
+      task.innerHTML = `<strong>Practice Task:</strong> ${level.task}`;
+      section.appendChild(task);
+
+      level.downloads.forEach(dl => {
+        const link = document.createElement('a');
+        link.href = dl.url;
+        link.textContent = `📎 ${dl.label}`;
+        link.style.display = 'block';
+        link.style.marginBottom = '0.5rem';
+        section.appendChild(link);
+      });
+
+      contentContainer.appendChild(section);
+    });
+
+    // Data source info
+    const sourceInfo = document.getElementById('source-info');
+    sourceInfo.innerHTML = `
+      <h3>📊 Data Source</h3>
+      <p><strong>Source:</strong> <a href="${data.dataSource.url}" target="_blank">${data.dataSource.name}</a></p>
+      <p><strong>Last Accessed:</strong> ${data.dataSource.lastAccessed}</p>
+      <p><em>${data.dataSource.note}</em></p>
+    `;
+  })
+  .catch(error => {
+    console.error('Error loading data:', error);
+    document.getElementById('title').textContent = "Error loading section content.";
+  });
