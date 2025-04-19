@@ -1,0 +1,6 @@
+Customer ID,First Name,Last Name,Region,Purchase Date,Amount (£)
+1001,Alice,Smith,North,01/03/2024,200
+1002,Bob,Jones,South,02/03/2024,150
+1004,Charlie,Brown,South,03/03/2024,180
+1005,David,Taylor,East,05/03/2024,195
+1006,Eve,Lee,West,06/03/2024,220
