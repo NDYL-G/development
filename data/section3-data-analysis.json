@@ -1,0 +1,58 @@
+{
+  "title": "Data Analysis",
+  "lastUpdated": "2025-04-19",
+  "overview": "This section helps you make sense of cleaned data by finding patterns, trends, and key figures. Analysing data is vital for making informed decisions and forms a major part of Assessment Method 1 for the Data Technician (ST0795) apprenticeship.",
+  "levels": [
+    {
+      "level": "Fundamental",
+      "skills": [
+        "Use sorting and filtering to explore data",
+        "Calculate totals, averages, and counts using SUM, AVERAGE, COUNT",
+        "Apply simple conditional formatting to highlight values"
+      ],
+      "task": "Use basic formulas to calculate the average and total amount from the cleaned sales data. Use filtering to view entries by region.",
+      "downloads": [
+        {
+          "label": "Download cleaned sales data",
+          "url": "../docs/cleaned-sales-data.csv"
+        }
+      ]
+    },
+    {
+      "level": "Intermediate",
+      "skills": [
+        "Use COUNTIF, AVERAGEIF, and SUMIF to analyse subsets of data",
+        "Group and summarise using pivot tables",
+        "Find outliers using filters and conditional formatting"
+      ],
+      "task": "Create a pivot table to summarise total sales by region. Use COUNTIF to identify how many entries exceed \u00a3200.",
+      "downloads": [
+        {
+          "label": "Download cleaned sales data",
+          "url": "../docs/cleaned-sales-data.csv"
+        }
+      ]
+    },
+    {
+      "level": "Advanced",
+      "skills": [
+        "Build dynamic pivot tables and slicers",
+        "Create calculated fields within pivot tables",
+        "Use advanced formulas like XLOOKUP or nested IFs"
+      ],
+      "task": "Create a pivot chart that updates with a slicer for region. Use XLOOKUP to find the corresponding customer name for an ID entered in a separate cell.",
+      "downloads": [
+        {
+          "label": "Download cleaned sales data",
+          "url": "../docs/cleaned-sales-data.csv"
+        }
+      ]
+    }
+  ],
+  "dataSource": {
+    "name": "Synthetic training dataset",
+    "url": "#",
+    "lastAccessed": "2025-04-19",
+    "note": "This fictional dataset is a cleaned version of the Section 2 file, created for practising analysis techniques."
+  }
+}
