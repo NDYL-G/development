@@ -12,7 +12,7 @@
       ],
       "task": "Copy a table from a Word document and save it as imported_table.xlsx.",
       "downloads": [
-        { "label": "Download Word table", "url": "../data/sample-word-table.docx" }
+        { "label": "Download Word table", "url": "../docs/sample-word-table.docx" }
       ]
     },
     {
@@ -24,7 +24,7 @@
       ],
       "task": "Import this CSV file and clean the headings.",
       "downloads": [
-        { "label": "Download ONS Employment CSV", "url": "../data/ons-employment.csv" }
+        { "label": "Download ONS Employment CSV", "url": "../docs/ons-employment.csv" }
       ]
     },
     {
@@ -36,7 +36,7 @@
       ],
       "task": "Connect Power Query to the CSV and clean the data.",
       "downloads": [
-        { "label": "Power Query Instructions", "url": "../data/ons-employment-steps.pq" }
+        { "label": "Power Query Instructions", "url": "../docs/ons-employment-steps.pq" }
       ]
     }
   ],
