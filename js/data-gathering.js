@@ -1,9 +1,13 @@
+// js/data-gathering.js
+
 fetch('../data/section1-data-gathering.json')
   .then(response => response.json())
   .then(data => {
+    // Set title and overview
     document.getElementById('title').textContent = data.title;
     document.getElementById('overview').textContent = data.overview;
 
+    // Section content
     const contentContainer = document.getElementById('levels');
 
     data.levels.forEach(level => {
@@ -38,6 +42,7 @@ fetch('../data/section1-data-gathering.json')
       contentContainer.appendChild(section);
     });
 
+    // Data source info
     const sourceInfo = document.getElementById('source-info');
     sourceInfo.innerHTML = `
       <h3>📊 Data Source</h3>
@@ -45,4 +50,8 @@ fetch('../data/section1-data-gathering.json')
       <p><strong>Last Accessed:</strong> ${data.dataSource.lastAccessed}</p>
       <p><em>${data.dataSource.note}</em></p>
     `;
+  })
+  .catch(error => {
+    console.error('Error loading data:', error);
+    document.getElementById('title').textContent = "Error loading section content.";
   });
